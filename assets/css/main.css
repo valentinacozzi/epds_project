@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'Edition';
-  src: url('assets/fonts/EditionRegular.woff') format('woff');
+  src: url('assets/css/fonts/EditionRegular.woff') format('woff');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -63,7 +63,7 @@ h2 {
     text-align: center;
     top: 50%;
     color: aliceblue;
-    font-family: 'cloister_blacklight';
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
   }
 
 a {
