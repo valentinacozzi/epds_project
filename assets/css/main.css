@@ -11,14 +11,48 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'De Valencia';
+  src: url('assets/css/fonts/DeValencia-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'METROPOLIS PERSONAL USE';
+  src: url('assets/css/fonts/METROPOLISPERSONALUSE-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Allegro';
+  src: url('Allegro.woff2') format('woff2'),
+      url('Allegro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 /* HTML */
 header {
   position: relative;
   text-align: center;
-  background-color: black;
+  background-color: transparent;
   height: 75vh;
   min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+#headerstorytelling {
+  position: relative;
+  background-color: transparent;
+  height: 6em;
+  min-height: 1em;
   width: 100%;
   overflow: hidden;
 }
