@@ -11,21 +11,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>  
         <script src="https://kit.fontawesome.com/4968a3075c.js" crossorigin="anonymous"></script>
     </head>
-    <!--Header-->
-    <header>
-        <!-- Background Video -->
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-            <source src="videos/Swirl - 66262.mp4" type="video/mp4">
-          </video>
-        <!-- The header content -->
-          <div class="container h-100">
-            <div class="d-flex h-100 text-center align-items-center">
-              <div class="w-100 text-white">
-                <h1 class="display-3">Portraits en nuances</h1>
-                <p class="lead mb-0">A dive into modern art's portraits and their colours</p>
-              </div>
-            </div>
-          </div>
+    <body>
         <!--Navbar-->
         <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
             <div class="container-fluid">
@@ -48,16 +34,28 @@
                         <a class="nav-link text-white active"  href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white active"  href="#">Credit</a>
+                        <a class="nav-link text-white active"  href="#">Credits</a>
                     </li>       
                 </ul>
               </div>
             </div>
         </nav>
-    </header>
-    <!--Body-->
-    <body>
-        <!--Main links and carousel-->
+        <!--End of Navbar-->
+        <!--Initial landing page-->
+        <section class="landing_page">
+            <div class="video_wrap">
+                <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                    <source src="videos/Swirl - 66262.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="caption">
+              <h1 class="text-center"> Portraits en nuances</h1>
+                <h3>A dive into modern art's portraits and their colours/nuances</p>
+                <a href="storytelling.html" class="btn btn-outline-light btn-lg">Begin</a> 
+            </div>
+        </section>
+        <!--End of landing page-->
+        <!--Main section and carousel-->
         <section id="explanation" class="p-5">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-between">
@@ -113,10 +111,11 @@
             <div class="col-md">
               <h3 class="text-center" id="project">The Project</h3>
                 <p>The project has been ......</p>
+                <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
             </div>
           </div>
         </section>
-        <!--The team cards-->
+        <!--Team's cards-->
         <section id="team" class="p-5">
           <div class="container-fluid">
             <h3 class="text-center" id="team">The Team</h3>
@@ -160,6 +159,15 @@
             </div>
           </div>
         </section>
+        <!--Credit-->
+        <section id="credit" class="p-5">
+          <div class="container-fluid">
+            <div class="col-md">
+              <h3 class="text-center" id="project">Credits</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+          </div>
+        </section>
     </body>
     <!--Footer-->
     <footer class="bg-light text-center text-lg-start">       
@@ -167,5 +175,6 @@
           © 2022 Copyright:
           <a class="text-dark" href="#theteam" style="text-decoration: none;">Valentina Cozzi, Maede Hajjari, Susanna Pinotti</a>
         </div>
-      
+
+    </body>   
 </html>
