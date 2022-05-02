@@ -47,8 +47,8 @@ body {
 }
 
 #secondary_body {
-  background: rgb(238,174,202);
-  background: radial-gradient(circle, rgba(238,174,202, .5) 0%, rgba(148,187,233, .5) 100%);
+  background: rgb(174,182,238);
+  background: radial-gradient(circle, rgba(174,182,238, .3) 0%, rgba(148,187,233, .3) 100%);
 	background-size: 400% 400%;
 	animation: gradient 30s ease infinite;
 	height: 100vh;
@@ -181,7 +181,8 @@ p {
 }
 
 .card-body {
-  background-color:rgba(238,174,202, .3);
+  background-color:rgba(174,182,238, .5);
+  border: rgb(0, 0, 0);
 }
 
 li {
