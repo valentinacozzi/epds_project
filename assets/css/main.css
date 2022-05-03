@@ -173,6 +173,10 @@ p {
   color:#FFF !important;
 }
 
+#figurine {
+  align-items: center !important;
+}
+
 .card-text {
   font-family: 'Dosis', sans-serif;
   font-weight: 400;
