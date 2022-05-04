@@ -121,7 +121,7 @@ section.landing_page {
 }
 
 .caption a{
-  color:#FFF !important;
+  color:rgba(174,182,238) !important;
   font-family: 'Dosis', sans-serif;
 }
 
@@ -129,7 +129,9 @@ section.landing_page {
   border-width: medium;
   border-radius: 0;
   font-size: 1.1rem;
-  padding: .6rem 1.3rem
+  font-weight: bold !important;
+  padding: .6rem 1.3rem;
+  background-color:rgba(174,182,238, .5);
 }
 
 h1 {
@@ -157,6 +159,11 @@ a {
   font-family: 'Dosis', sans-serif;
 }
 
+/* HTML 
+a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+*/
 .fa-brands {
   font-size: 20px;
   letter-spacing: 0.5em;
