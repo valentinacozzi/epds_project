@@ -103,7 +103,8 @@ section.landing_page {
 }
 
 .caption a{
-  color:rgba(174,182,238) !important;
+  color:rgb(0, 0, 0) !important;
+  text-shadow: .1rem .1rem .8rem rgb(255, 255, 255);
   font-family: 'Dosis', sans-serif;
 }
 
@@ -183,8 +184,44 @@ li {
   font-weight: 400;
   font-size: 16px;
   text-align:left;
+  cursor: pointer;
+    opacity: 5;
+    transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -webkit-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
 }
+li:hover {
+  opacity: .4;
+
+
+
 
 .img-fluid {
   padding-bottom: 1rem;
+}
+
+#prova {
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+  font-family: 'Poiret One', cursive;
+  font-weight: bold !important;
+}
+
+#prova::before {
+  content: '';
+  background-color: hsla(196, 61%, 58%, .75);
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  width: 100%;
+  height: 8px;
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+#prova:hover::before {
+  bottom: 0;
+  height: 100%;
 }
