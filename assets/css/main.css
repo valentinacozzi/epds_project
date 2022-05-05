@@ -142,11 +142,6 @@ a {
   font-family: 'Dosis', sans-serif;
 }
 
-/* HTML 
-a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-*/
 .fa-brands {
   font-size: 20px;
   letter-spacing: 0.5em;
@@ -161,6 +156,21 @@ p {
 
 .nav-link {
   color:#FFF !important;
+}
+
+.nav-item {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-align:left;
+    opacity: 5;
+    transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -webkit-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+}
+.nav-item:hover {
+  opacity: .4;
 }
 
 #figurine {
@@ -184,22 +194,13 @@ li {
   font-weight: 400;
   font-size: 16px;
   text-align:left;
-  cursor: pointer;
-    opacity: 5;
-    transition: opacity .4s ease-out;
-    -moz-transition: opacity .4s ease-out;
-    -webkit-transition: opacity .4s ease-out;
-    -o-transition: opacity .4s ease-out;
-}
-li:hover {
-  opacity: .4;
 }
 
 .img-fluid {
   padding-bottom: 1rem;
 }
 
-#prova {
+#evidenziatore {
   text-decoration: none;
   color: #000000;
   position: relative;
@@ -207,7 +208,7 @@ li:hover {
   font-weight: bold !important;
 }
 
-#prova::before {
+#evidenziatore::before {
   content: '';
   background-color: hsla(196, 61%, 58%, .75);
   position: absolute;
@@ -219,7 +220,7 @@ li:hover {
   transition: all .3s ease-in-out;
 }
 
-#prova:hover::before {
+#evidenziatore:hover::before {
   bottom: 0;
   height: 100%;
 }
