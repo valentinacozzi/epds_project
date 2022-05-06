@@ -154,6 +154,13 @@ p {
   text-align: justify;
 }
 
+#story {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+}
+
 .nav-link {
   color:#FFF !important;
 }
@@ -163,13 +170,16 @@ p {
   font-weight: 400;
   font-size: 16px;
   text-align:left;
+}
+
+#nav_a {
     opacity: 5;
     transition: opacity .4s ease-out;
     -moz-transition: opacity .4s ease-out;
     -webkit-transition: opacity .4s ease-out;
     -o-transition: opacity .4s ease-out;
 }
-.nav-item:hover {
+#nav_a:hover {
   opacity: .4;
 }
 
@@ -223,4 +233,16 @@ li {
 #evidenziatore:hover::before {
   bottom: 0;
   height: 100%;
+}
+
+#special {
+  font-weight: bold;
+opacity: 5;
+    transition: opacity .4s ease-out;
+    -moz-transition: opacity .4s ease-out;
+    -webkit-transition: opacity .4s ease-out;
+    -o-transition: opacity .4s ease-out;
+}
+#special:hover {
+  opacity: .4;
 }
