@@ -246,3 +246,8 @@ opacity: 5;
 #special:hover {
   opacity: .4;
 }
+
+#photography {
+  position: relative;
+  align-items: center;
+}
