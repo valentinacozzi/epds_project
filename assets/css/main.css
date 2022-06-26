@@ -249,5 +249,5 @@ opacity: 5;
 
 #photography {
   position: relative;
-  align-items: center;
+  align-items: center !important;
 }
