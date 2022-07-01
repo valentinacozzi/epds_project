@@ -1,5 +1,5 @@
 # Portraits en nuances 
-[Project Webpage](https://valentinacozzi.github.io/epds_project/)
+Check out the [Project Webpage](https://valentinacozzi.github.io/epds_project/)
 
 ## Abstract
 AAAAA
@@ -14,9 +14,9 @@ AAAA
 * How do colours change through time? (eg: How are the self portraits in impressionism different from expressionists ones?)
 
 ## Team
-* Valentina Cozzi: web development, storytelling, communication 
-* Maede Hajjari: data visualization
-* Susanna Pinotti: knowledge extraction, data cleaning, data analysis 
+* __Valentina Cozzi__: web development, storytelling, communication 
+* __Maede Hajjari__: data visualization
+* __Susanna Pinotti__: knowledge extraction, data cleaning, data analysis 
 
 ## License en nuances 
 * Wikidata data are available under [CC0 license](https://creativecommons.org/share-your-work/public-domain/cc0/).
