@@ -18,7 +18,7 @@ AAAA
 * __Maede Hajjari__: data visualization
 * __Susanna Pinotti__: knowledge extraction, data cleaning, data analysis 
 
-## License en nuances 
+## License 
 * Wikidata data are available under [CC0 license](https://creativecommons.org/share-your-work/public-domain/cc0/).
 * Data visualizations powered by ..... under ........
 * Project materials, website and data are licensed under [CC BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/).
