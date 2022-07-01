@@ -4,15 +4,22 @@
 ## Abstract
 AAAAA
 
-# Goal  
+has been carried out for the exam of Electronic Publishing and Digital Storytelling held by Professor Marilena Daquino, within the [Digital Humanities and Digital Knowledge](https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge) course at the University of Bologna.
+
+## Goal  
 AAAA
 
-# Research questions
-AAAAA
-# Team
-* Valentina Cozzi
-* Maede Hajjari
-* Susanna Pinotti 
+## Research questions
+* What and how many portraits and self portaits can be found in each artistic period? 
+* How do colours change through time? (eg: How are the self portraits in impressionism different from expressionists ones?)
+
+## Team
+* Valentina Cozzi: web development, storytelling, communication 
+* Maede Hajjari: data visualization
+* Susanna Pinotti: knowledge extraction, data cleaning, data analysis 
 
 ## License en nuances 
-AAAA
+* Wikidata data are available under [CC0 license](https://creativecommons.org/share-your-work/public-domain/cc0/).
+* Data visualizations powered by ..... under ........
+* Project materials, website and data are licensed under [CC BY 4.0 licence](https://creativecommons.org/licenses/by/4.0/).
+
