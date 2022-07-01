@@ -1,16 +1,18 @@
 # Portraits en nuances 
-[Project Webpage(https://valentinacozzi.github.io/epds_project/)
+[Project Webpage](https://valentinacozzi.github.io/epds_project/)
 
-##Abstract
+## Abstract
+AAAAA
 
-##Goal
+# Goal  
+AAAA
 
-##Research questions
-
-##Team
+# Research questions
+AAAAA
+# Team
 * Valentina Cozzi
 * Maede Hajjari
 * Susanna Pinotti 
 
-
-##License
+## License en nuances 
+AAAA
