@@ -1,92 +1,61 @@
-#story_beg {
+/* H2 transitions */
+#intro_h{
     font-family: 'Poiret One', cursive;
     text-transform: uppercase;
     text-align: center;
     font-weight: bold !important;
     font-size: 5rem !important;
-    transition: 2s;
+    transition: 1s;
     opacity: 0;
 }
-
-#story_beg[data-scroll] {
+#intro_h[data-scroll] {
     transition: opacity 1s;
   }
-#story_beg[data-scroll="in"] {
+#intro_h[data-scroll="in"] {
     opacity: 1;
     transition-delay: 1s;
   }
-#story_beg[data-scroll="out"] {
+#intro_h[data-scroll="out"] {
     opacity: 0;
     transition-delay: 1s;
   }
 
-  #story {
+/* Paragraphs transitions */
+#intro_p{
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
     font-size: 50px;
     text-align: center;
     transition: 1s;
     opacity: 0;
-  }
-  #story[data-scroll] {
+}
+#intro_p[data-scroll] {
     transition: opacity 1s;
   }
-
-  #story [data-scroll="in"] {
+#intro_p[data-scroll="in"] {
     opacity: 1;
     transition-delay: 1s;
   }
- 
-  #story[data-scroll="out"] {
+#intro_p[data-scroll="out"] {
     opacity: 0;
     transition-delay: 1s;
-  }  
+  }
 
-
-
-  #photography {
+/* Imgs transitions */
+#img_story {
     position: relative;
     align-items: center !important;
-    transition: 2s;
-    opacity: 0;
-  }
- #photography [data-scroll] {
-    transition: opacity 1s;
-  }
-  #photography[data-scroll="in"] {
-    opacity: 1;
-    transition-delay: 1s;
-  }
-  [data-scroll="out"] {
-    opacity: 0;
-    transition-delay: 1s;
-  }
-
-
-  #questions {
-    font-family: 'Poiret One', cursive;
-    font-weight: bold !important;
-    text-align: center;
-    transition: 2s;
+    transition: 1s;
     opacity: 0;
 }
-
-#questions[data-scroll] {
+#img_story[data-scroll] {
     transition: opacity 1s;
   }
-#questions[data-scroll="in"] {
+#img_story[data-scroll="in"] {
     opacity: 1;
     transition-delay: 1s;
   }
-#questions[data-scroll="out"] {
+#img_story[data-scroll="out"] {
     opacity: 0;
     transition-delay: 1s;
-  }
-
-  
-
-.underlined {
-    background-image: linear-gradient(120deg, #90a4ee 0%, #8fd3f4 80%);
-    border-radius: 2px !important;
-    padding: 1px 2px !important;
   }
