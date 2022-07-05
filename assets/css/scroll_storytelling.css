@@ -24,7 +24,7 @@
 #intro_p{
     font-family: 'Dosis', sans-serif;
     font-weight: 400;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     transition: 1s;
     opacity: 0;
@@ -64,7 +64,7 @@
   font-family: 'Poiret One', cursive;
   text-transform: uppercase;
   text-align: center;
-  font-weight: bold !important;
+  font-weight: bolder !important;
   font-size: 3rem !important;
   transition: 1s;
   opacity: 0;
@@ -80,6 +80,7 @@
     opacity: 0;
     transition-delay: 1s;
   }
+
 /* Arrow scrolling down animation */
 .arrows {
     width: 60px;
