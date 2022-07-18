@@ -255,6 +255,14 @@ opacity: 5;
   -webkit-transform: rotate(-45deg);
 }
 
+footer {
+  font-family: 'Dosis', sans-serif;
+  text-transform: uppercase;
+}
+
+.text-dark {
+  text-transform: none !important;
+}
 
 /* Carousel to fix 
 #carousel2 {

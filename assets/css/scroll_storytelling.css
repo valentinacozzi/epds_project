@@ -136,4 +136,15 @@
     border-radius: 2px !important;
     padding: 1px 2px !important;
   }
-  
+
+.men_underlined {
+  background-color: rgba(72, 99, 160, .6);
+    border-radius: 1px !important;
+    padding: 0,5px 0,5px !important;
+}
+
+.women_underlined {
+  background-color:rgba(241,145,155, .6);
+  border-radius: 1px !important;
+  padding: 0,5px 0,5px !important;
+}
