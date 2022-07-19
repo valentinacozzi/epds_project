@@ -1,0 +1,53 @@
+<!-- TOP_15_PAINTERS_AND_THEIR_MOVEMENT_TopxBarChart : Top-x Bar Chart -->
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Painters", "Number of Paintings", { role: 'style' }, {role:"annotation"}],
+          ["Pierre-Auguste Renoir",171,'color: #e97451',"Impressionism"],
+          ["Vincent van Gogh",146,"#bc8f8f","Expressionism"],
+          ["Edvard Munch",133,"#bc8f8f","Expressionism"],
+          ["John Singer Sargent",132,"#e97451","Impressionism"],
+          ["Amedeo Modigliani",121,"silver","Modernism"],
+          ["Peder Severin Krøyer",99,"#e97451","Impressionism"],
+          ["Jacek Malczewski",98,"silver","Symbolism"],
+          ["Joaquín Sorolla",81,"silver","naturalism"],
+          ["Eliseu Visconti",73,"#e97451","Impressionism"],
+          ["Paul Cézanne",70,"silver","Post-Impressionism"],
+          ["Thomas Eakins",70,"#696969","Realism"],
+          ["Édouard Manet",66,"#e97451","Impressionism"],
+          ["Ilya Repin",45,"silver","Realism"],
+          ["Albert Edelfelt",44,"silver","Realism"],
+          ["Paul Gauguin",43,"#e97451","Impressionism"]
+        ]);
+
+        var options = {
+          title: 'Top 15 Painters and their Movements',
+          width: 900,
+          legend: { position: 'none' },
+          chart: { title: 'Top 15 Painters and their Movements'},
+          bars: 'horizontal',
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Number of Paintings'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="barchart_material" style="width: 900px; height: 700px;"></div>
+  </body>
+</html>
