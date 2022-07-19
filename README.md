@@ -1,5 +1,6 @@
 # Portraits en nuances 
 Check out the [Project Webpage](https://valentinacozzi.github.io/epds_project/)
+Jupyter Notebook on: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/valentinacozzi/epds_project/main) 
 
 ## Abstract
 AAAAA
