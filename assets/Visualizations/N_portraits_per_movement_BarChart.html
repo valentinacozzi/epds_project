@@ -1,0 +1,92 @@
+<!-- N_portraits_per_movement : Bar Chart -->
+
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Movements', 'Number of Portraits'],
+          ["Academic Art",176],
+          ["Art Deco",1],
+          ["Art Nouveau",70],
+          ["Arts and Crafts movement",28],
+          ["Ashcan School",26],
+          ["Baroque",3],
+          ["Baroque painting",1],
+          ["Biedermeier",4],
+          ["Bloomsbury Group",1],
+          ["Brabant fauvism",3],
+          ["Cubism",16],
+          ["Dutch Golden Age painting",2],
+          ["Düsseldorf school of painting",2],
+          ["Etaples art colony",1],
+          ["Expressionism",498],
+          ["Flemish neo-renaissance",1],
+          ["Futurism",5],
+          ["Harlem Renaissance",2],
+          ["Hoosier Group",7],
+          ["Hudson River school",1],
+          ["Impressionism",1067],
+          ["Jack of Diamonds",1],
+          ["Luminism",1],
+          ["Macchiaioli",14],
+          ["Modernism",147],
+          ["Molse School",2],
+          ["Munich School",1],
+          ["Neo-Impressionism",46],
+          ["Newlyn School",1],
+          ["Orientalism",93],
+          ["Orientalist painting",3],
+          ["Post-Impressionism",236],
+          ["Precisionism",1],
+          ["Realism",636],
+          ["Regionalism",4],
+          ["Rococo",1],
+          ["Romantic painting",2],
+          ["Romanticism",64],
+          ["Russian avant-garde",5],
+          ["Scapigliatura",1],
+          ["Symbolism",388],
+          ["Synchromism",1],
+          ["Vienna Secession",1],
+          ["Volcano School",2],
+          ["Yōga",3],
+          ["abstract expressionism",1],
+          ["aestheticism",2],
+          ["genre painting",1],
+          ["mannerism",1],
+          ["naturalism",83],
+          ["neo-Pompeian",6],
+          ["neo-romanticism",1],
+          ["neoclassicism",15],
+          ["potato",11],
+          ["romantic nationalism",13],
+          ["suprematism",12],
+          ["surrealism",3],
+          ["synthetism",3],
+          ["vorticism",1],
+          ["École de Nancy",4]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Number portraits per movement',
+            subtitle: 'we can see the most number of portraits are in Impressionism movement',
+          },
+          bars: 'horizontal'
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+    </script>
+  </head>
+  <body>
+    <div id="barchart_material" style="width: 1200px; height: 1200px;"></div>
+  </body>
+</html>
