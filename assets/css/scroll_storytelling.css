@@ -149,4 +149,13 @@
   padding: 0,5px 0,5px !important;
 }
 
+#wowslider-container1 {
+  text-align: center;
+  height: 120, 340
+}
 
+/* Carousel to fix */
+
+#carousel1 {
+  align-self: center;
+}
