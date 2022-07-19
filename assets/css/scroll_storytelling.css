@@ -115,6 +115,27 @@
   transition-delay: 1s;
 }
 
+/* UL transitions */
+.l_colours {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 400;
+  font-size: 35px;
+  text-align: justify;
+  transition: 1s;
+  opacity: 0;
+}
+.l_colours[data-scroll] {
+  transition: opacity 1s;
+}
+.l_colours[data-scroll="in"] {
+  opacity: 1;
+  transition-delay: 1s;
+}
+.l_colours[data-scroll="out"] {
+  opacity: 0;
+  transition-delay: 1s;
+}
+
 
 /* Arrow scrolling down animation */
 .arrows {
@@ -184,10 +205,39 @@
   padding: 0,5px 0,5px !important;
 }
 
-#wowslider-container1 {
-  text-align: center;
-  height: 120, 340
+.red {
+  background-color:rgba(161, 5, 21, 0.6);
+  border-radius: 1px !important;
+  padding: 0,5px 0,5px !important;
 }
+
+.yellow {
+  background-color:rgba(215, 199, 18, 0.6);
+  border-radius: 1px !important;
+  padding: 0,5px 0,5px !important;
+}
+.orange {
+  background-color:rgba(211, 111, 11, 0.6);
+  border-radius: 1px !important;
+  padding: 0,5px 0,5px !important;
+}
+.green {
+  background-color:rgba(20, 169, 10, 0.6);
+  border-radius: 1px !important;
+  padding: 0,5px 0,5px !important;
+}
+.blue  {
+  background-color:rgba(34, 32, 169, 0.6);
+  border-radius: 1px !important;
+  padding: 0,5px 0,5px !important;
+}
+
+.purple  {
+  background-color:rgba(107, 9, 152, 0.6);
+  border-radius: 1px !important;
+  padding: 0,5px 0,5px !important;
+}
+
 
 /* Carousel to fix */
 #carousel2 {
