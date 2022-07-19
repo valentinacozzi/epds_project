@@ -94,15 +94,257 @@
               <p id="intro_p" class="counter"><span data-purecounter-start="0" data-purecounter-end="453" data-purecounter-duration="3" class="purecounter"></span></p>
               <p id="intro_p" class="counter"><span data-purecounter-start="0" data-purecounter-end="418" data-purecounter-duration="3" class="purecounter"></span> of them are <span class="men_underlined">men</span></p>
               <p id="intro_p" class="counter"><span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="3" class="purecounter"></span> of them are <span class="women_underlined">women</span></p>
+              
+              <div class="chart">
+                <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                <script type="text/javascript">
+                  google.charts.load("current", {packages:["corechart"]});
+                  google.charts.setOnLoadCallback(drawChart);
+                  function drawChart() {
+                    var data = google.visualization.arrayToDataTable([
+                      ['Gender', 'Number'],
+                      ['Female',     35],
+                      ['Male',      418],
+                    ]);
+
+                    var options = {
+                      title: 'Gender distribution ',
+                      pieHole: 0.4,
+                      slices: {  0: {color:"#e3afc0", offset: 0.1},
+                                1: {color:"#7c93c2"}
+                      },
+                    };
+
+                    var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+                    chart.draw(data, options);
+                  }
+                </script>
+                <div id="donutchart" style="width: 900px; height: 500px;"></div>
+              </div>
               <p id="intro_p">All of these artists belong to all those avant-garde movements that strived to find their places in an ever-changing world.</p>
               <h3 class="secondary_h">Paintings per movement</h3>
               <p>+ TOP 15 painting and their MOVEMENTS</p>
               <h3 class="secondary_h">Painters per movement</h3>
+              <div class="chart">
+                <script type="text/javascript">
+                  google.charts.load('current', {'packages':['bar']});
+                  google.charts.setOnLoadCallback(drawChart);
+            
+                  function drawChart() {
+                    var data = google.visualization.arrayToDataTable([
+                      ['Movements', 'Number of Painters'],
+                      ['Art Deco', 1],
+                      ['Art Nouveau', 11],
+                      ['Arts and Crafts movement', 4],
+                      ['Ashcan School', 5],
+                      ['Baroque', 3],
+                      ['Baroque painting', 1],
+                      ['Biedermeier', 1],
+                      ['Bloomsbury Group', 1],
+                      ['Brabant fauvism', 1],
+                      ['Cubism', 6],
+                      ['Dutch Golden Age painting', 2],
+                      ['Düsseldorf school of painting', 2],
+                      ['Etaples art colony', 1],
+                      ['Expressionism', 40],
+                      ['Flemish neo-renaissance', 1],
+                      ['Futurism', 4],
+                      ['Harlem Renaissance', 1],
+                      ['Hoosier Group', 3],
+                      ['Hudson River school', 1],
+                      ['Impressionism', 67],
+                      ['Jack of Diamonds', 1],
+                      ['Luminism', 1],
+                      ['Macchiaioli', 2],
+                      ['Modernism', 12],
+                      ['Molse School', 1],
+                      ['Munich School', 1],
+                      ['Neo-Impressionism', 10],
+                      ['Newlyn School', 1],
+                      ['Orientalism', 30],
+                      ['Orientalist painting', 1],
+                      ['Post-Impressionism', 29],
+                      ['Precisionism', 1],
+                      ['Realism', 87],
+                      ['Regionalism', 1],
+                      ['Rococo', 1],
+                      ['Romantic painting', 1],
+                      ['Romanticism', 12],
+                      ['Russian avant-garde', 1],
+                      ['Scapigliatura', 1],
+                      ['Symbolism', 49],
+                      ['Synchromism', 1],
+                      ['Vienna Secession', 1],
+                      ['Volcano School', 1],
+                      ['Yōga', 3],
+                      ['abstract expressionism', 1],
+                      ['aestheticism', 1],
+                      ['genre painting', 1],
+                      ['mannerism', 1],
+                      ['naturalism', 2],
+                      ['neo-Pompeian', 1],
+                      ['neo-romanticism', 1],
+                      ['neoclassicism', 4],
+                      ['potato', 1],
+                      ['romantic nationalism', 2],
+                      ['suprematism', 3],
+                      ['surrealism', 2],
+                      ['synthetism', 1],
+                      ['vorticism', 1],
+                      ['École de Nancy', 1],
+                    ]);
+            
+                    var options = {
+                      chart: {
+                        title: 'Number painters per movement',
+                        subtitle: 'we can see the most popular movement is Realism',
+                      },
+                      bars: 'horizontal'
+                    };
+            
+                    var chart = new google.charts.Bar(document.getElementById('barchart_material'));
+            
+                    chart.draw(data, google.charts.Bar.convertOptions(options));
+                  }
+                </script>
+                <div id="barchart_material" style="width: 1200px; height: 1200px;"></div>
+              </div>
               <p>+ TOP 15 painters and their MOVEMENTS</p>
               <h3 id="geo" class="secondary_h">Movement per country</h3>
               <p>visualization with map</p>
               <p>VISUALIZATION WITH N PORTRAIT PER COUNTRY WITH MAP</p>
+              <!--Number of portraits per country-->
+              <div class="chart">
+                <script type="text/javascript">
+                  google.charts.load('current', {
+                    'packages':['geochart'],
+                  });
+                  google.charts.setOnLoadCallback(drawRegionsMap);
+                  
+                  function drawRegionsMap() {
+                    var data = google.visualization.arrayToDataTable([
+                      ['Country', 'Portraits'],
+                      ["Albania",1],
+                      ["Argentina",1],
+                      ["Australia",17],
+                      ["Austria",74],
+                      ["Belgium",56],
+                      ["Brazil",108],
+                      ["Canada",2],
+                      ["Chile",2],
+                      ["Denmark",98],
+                      ["Estonia",5],
+                      ["Finland",126],
+                      ["France",867],
+                      ["Germany",108],
+                      ["Greece",1],
+                      ["Hungary",40],
+                      ["India",1],
+                      ["Ireland",2],
+                      ["Italy",146],
+                      ["Japan",4],
+                      ["Latvia",1],
+                      ["Luxembourg",1],
+                      ["Mexico",3],
+                      ["Netherlands",213],
+                      ["New Zealand",17],
+                      ["Norway",268],
+                      ["Philippines",2],
+                      ["Poland",372],
+                      ["Portugal",46],
+                      ["Romania",9],
+                      ["Russia",175],
+                      ["South Africa",2],
+                      ["Spain",164],
+                      ["Sweden",103],
+                      ["Switzerland",40],
+                      ["Turkey",1],
+                      ["USA",490],
+                      ["United Kingdom",159],
+                      ["Yugoslavia",1]
+                    ]);
+            
+                    var options = {
+                        colorAxis: {colors: ['#c7dea0', '#556b2f']}
+            
+                    };
+            
+                    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+            
+                    chart.draw(data, options);
+                  }
+                </script>
+                <div id="regions_div" style="width: 900px; height: 500px;"></div>
+              </div>
+
+
               <p>VISUALIZATION WITH N PAINTER PER COUNTRY WITH MAP</p>
+              <div class="chart">
+                
+                <script type="text/javascript">
+                  google.charts.load('current', {
+                    'packages':['geochart'],
+                  });
+                  google.charts.setOnLoadCallback(drawRegionsMap);
+                  
+                  function drawRegionsMap() {
+                    var data = google.visualization.arrayToDataTable([
+                      ['Country', 'painters'],
+                      ['Argentina', 1],
+                      ['Australia', 4],
+                      ['Austria', 12],
+                      ['Belgium', 17],
+                      ['Brazil', 3],
+                      ['Canada', 2],
+                      ['Chile', 1],
+                      ['Denmark', 9],
+                      ['Estonia', 3],
+                      ['Finland', 8],
+                      ['France', 93],
+                      ['Germany', 25],
+                      ['Greece', 1],
+                      ['Hungary', 6],
+                      ['India', 1],
+                      ['Ireland', 1],
+                      ['Italy', 10],
+                      ['Japan', 4],
+                      ['Latvia', 1],
+                      ['Luxembourg', 1],
+                      ['Mexico', 2],
+                      ['Netherlands', 19],
+                      ['New Zealand', 2],
+                      ['Norway', 7],
+                      ['Philippines', 1],
+                      ['Poland', 33],
+                      ['Portugal', 8],
+                      ['Romania', 3],
+                      ['Russia', 40],
+                      ['South Africa', 1],
+                      ['Spain', 19],
+                      ['Sweden', 9],
+                      ['Switzerland', 8],
+                      ['Turkey', 1],
+                      ['USA', 61],
+                      ['United Kingdom', 43],
+                      ['Yugoslavia', 1],
+                    ]);
+            
+                    var options = {
+                        colorAxis: {colors: ['#c7dea0', '#556b2f']}
+            
+                    };
+            
+                    var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+            
+                    chart.draw(data, options);
+                  }
+                </script>
+          
+                <div id="regions_div" style="width: 900px; height: 500px;"></div>
+              </div>
+              
+
+
               <h3 id="colour" class="secondary_h">COLOURS</h3>
               <p id="intro_p">When it comes to painting, the colours used in a work of art are just as important as the subject matter. </p> 
               <p id="intro_p">Although colour has always been an important part of the art-making process, the variety of tones that are now readily accessible were not available in the past.  </p> 
@@ -319,7 +561,7 @@
               </div>
             
             </section>
-            <p id="intro_p">PARAGRAFETTO FINALEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE</p>
+            <p id="intro_p">THANK YOU FOR THE ATTENTION</p>
       </div>
       <br>
       <br>
