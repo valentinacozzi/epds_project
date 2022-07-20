@@ -95,7 +95,7 @@
               <p id="intro_p" class="counter"><span data-purecounter-start="0" data-purecounter-end="418" data-purecounter-duration="3" class="purecounter"></span> of them are <span class="men_underlined">men</span></p>
               <p id="intro_p" class="counter"><span data-purecounter-start="0" data-purecounter-end="35" data-purecounter-duration="3" class="purecounter"></span> of them are <span class="women_underlined">women</span></p>
               
-              <div class="chart">
+              <div class="chart" class="center">
                 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
                 <script type="text/javascript">
                   google.charts.load("current", {packages:["corechart"]});
@@ -199,7 +199,8 @@
                         title: 'Number portraits per movement',
                         subtitle: 'we can see the most number of portraits are in Impressionism movement',
                       },
-                      bars: 'horizontal'
+                      bars: 'horizontal',
+		      backgroundColor: '#cbdbf4',
                     };
             
                     var chart = new google.charts.Bar(document.getElementById('barchart_material'));
@@ -207,7 +208,7 @@
                     chart.draw(data, google.charts.Bar.convertOptions(options));
                   }
                 </script>
-                <div id="barchart_material" style="width: 1200px; height: 1200px;"></div>
+                <div id="barchart_material" style="width: 1200px; height: 1200px;" class="center"></div>
 
               </div>
               <p>+ TOP 15 painting and their MOVEMENTS</p>
@@ -249,7 +250,7 @@
                         }
                       },
                       bar: { groupWidth: "90%" },
-		      backgroundColor: '#cbdbf4'
+		      backgroundColor: '#cbdbf4',
                     };
             
                     var chart = new google.charts.Bar(document.getElementById('barchart_material2'));
@@ -257,11 +258,11 @@
                     chart.draw(data, google.charts.Bar.convertOptions(options));
                   }
                 </script>
-                <div id="barchart_material2" style="width: 900px; height: 700px;"></div>
+                <div id="barchart_material2" style="width: 900px; height: 700px;" class="center"></div>
 
               </div>
               <h3 class="secondary_h">Painters per movement</h3>
-              <div class="chart">
+              <div class="chart" class="center">
                 <script type="text/javascript">
                   google.charts.load('current', {'packages':['bar']});
                   google.charts.setOnLoadCallback(drawChart);
@@ -335,8 +336,7 @@
                         title: 'Number painters per movement',
                         subtitle: 'we can see the most popular movement is Realism',
                       },
-                      bars: 'horizontal',
-			    
+                      bars: 'horizontal',    
 		      backgroundColor: '#cbdbf4',
                     };
             
