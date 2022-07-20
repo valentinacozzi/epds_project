@@ -248,7 +248,8 @@
                           0: { side: 'top', label: 'Numbers of Paintings'} // Top x-axis.
                         }
                       },
-                      bar: { groupWidth: "90%" }
+                      bar: { groupWidth: "90%" },
+		      backgroundColor: '#cbdbf4'
                     };
             
                     var chart = new google.charts.Bar(document.getElementById('barchart_material2'));
@@ -334,7 +335,9 @@
                         title: 'Number painters per movement',
                         subtitle: 'we can see the most popular movement is Realism',
                       },
-                      bars: 'horizontal'
+                      bars: 'horizontal',
+			    
+		      backgroundColor: '#cbdbf4',
                     };
             
                     var chart = new google.charts.Bar(document.getElementById('barchart_material1'));
@@ -381,7 +384,9 @@
                           0: { side: 'top', label: 'Number of Paintings'} // Top x-axis.
                         }
                       },
-                      bar: { groupWidth: "90%" }
+                      bar: { groupWidth: "90%" },
+			    
+		      backgroundColor: '#cbdbf4',
                     };
             
                     var chart = new google.charts.Bar(document.getElementById('barchart_material3'));
@@ -448,8 +453,8 @@
                     ]);
             
                     var options = {
-                        colorAxis: {colors: ['#c7dea0', '#556b2f']}
-            
+                        colorAxis: {colors: ['#c7dea0', '#556b2f']},
+			backgroundColor: '#cbdbf4'
                     };
             
                     var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
@@ -514,7 +519,8 @@
             
                     var options = {
                         colorAxis: {colors: ['#c7dea0', '#556b2f']}
-            
+            		
+		      backgroundColor: '#cbdbf4',
                     };
             
                     var chart = new google.visualization.GeoChart(document.getElementById('regions_div1'));
