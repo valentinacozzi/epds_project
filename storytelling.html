@@ -120,10 +120,11 @@
                     chart.draw(data, options);
                   }
                 </script>
-                <div id="donutchart" style="width: 900px; height: 500px;" class="center"></div>
+                <div id="donutchart" style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;" class="center"></div>
               </div>
               <p id="intro_p">All of these artists belong to all those avant-garde movements that strived to find their places in an ever-changing world.</p>
-              <h3 class="secondary_h">Paintings per movement</h3>
+              <br>
+              <h4 class="question">How many portraits are there in each movement?</h4>
 		  <br>
            	  <br>
 		  <br>
@@ -162,42 +163,42 @@
                       ["Regionalism",4],
                       ["Biedermeier",4],
                       ["École de Nancy",4],
-                      ["Yōga",3],
-                      ["Baroque",3],
-                      ["Brabant fauvism",3],
-                      ["Surrealism",3],
-                      ["Synthetism",3],
-                      ["Dutch Golden Age painting",2],
-                      ["Düsseldorf school of painting",2],
-                      ["Harlem Renaissance",2],
-                      ["Molse School",2],
-                      ["Volcano School",2],
-                      ["Aestheticism",2],
-                      ["Etaples art colony",1],
-                      ["Flemish neo-renaissance",1],
-                      ["Hudson River school",1],
-                      ["Jack of Diamonds",1],
-                      ["Luminism",1],
-                      ["Munich School",1],
-                      ["Newlyn School",1],
-                      ["Precisionism",1],
-                      ["Rococo",1],
-                      ["Bloomsbury Group",1],
-                      ["Scapigliatura",1],
-                      ["Synchromism",1],
-                      ["Vienna Secession",1],
-                      ["Abstract expressionism",1],
-                      ["Genre painting",1],
-                      ["Mannerism",1],
-                      ["Neo-romanticism",1],
-                      ["Vorticism",1],
-                      ["Art Deco",1],
+                      //["Yōga",3],
+                      //["Baroque",3],
+                      //["Brabant fauvism",3],
+                      //["Surrealism",3],
+                      //["Synthetism",3],
+                      //["Dutch Golden Age painting",2],
+                      //["Düsseldorf school of painting",2],
+                      //["Harlem Renaissance",2],
+                      //["Molse School",2],
+                      //["Volcano School",2],
+                      //["Aestheticism",2],
+                      //["Etaples art colony",1],
+                      //["Flemish neo-renaissance",1],
+                      //["Hudson River school",1],
+                      //["Jack of Diamonds",1],
+                      //["Luminism",1],
+                      //["Munich School",1],
+                      //["Newlyn School",1],
+                      //["Precisionism",1],
+                      //["Rococo",1],
+                      //["Bloomsbury Group",1],
+                      //["Scapigliatura",1],
+                      //["Synchromism",1],
+                      //["Vienna Secession",1],
+                      //["Abstract expressionism",1],
+                      //["Genre painting",1],
+                      //["Mannerism",1],
+                      //["Neo-romanticism",1],
+                      //["Vorticism",1],
+                      //["Art Deco",1],
                     ]);
             
                     var options = {
                       chart: {
                         title: 'Number portraits per movement',
-                        subtitle: 'We can see the most number of portraits are in Impressionism movement',
+                        //subtitle: 'We can see the most number of portraits are in Impressionism movement',
                       },
                       bars: 'horizontal',
 		      backgroundColor: '#cbdbf4',
@@ -209,13 +210,13 @@
                     chart.draw(data, google.charts.Bar.convertOptions(options));
                   }
                 </script>
-                <div id="barchart_material" style="width: 1200px; height: 1200px;" class="center"></div>
+                <div id="barchart_material" style="width: 800px; height: 500px; display:block; margin-left: auto; margin-right: auto;" class="center"></div>
 
               </div>
 		  <br>
            	  <br>
 		  <br>
-              <p>+ TOP 15 painting and their MOVEMENTS</p>
+              
               <div class="chart">
                 <script type="text/javascript">
                   google.charts.load('current', {'packages':['bar']});
@@ -223,27 +224,28 @@
             
                   function drawChart() {
                     var data = google.visualization.arrayToDataTable([
-                      ['Movements', 'Number of Paintings'],
-                      ["Impressionism",1067],
-                      ["Realism",636],
-                      ["Expressionism",498],
-                      ["Symbolism",388],
-                      ["Post-Impressionism",236],
-                      ["Academic Art",176],
-                      ["Modernism",147],
-                      ["Orientalism",93],
-                      ["Naturalism",83],
-                      ["Art Nouveau",70],
-                      ["Romanticism",64],
-                      ["Neo-Impressionism",46],
-                      ["Arts and Crafts movement",28],
-                      ["Ashcan School",26],
-                      ["Cubism",16]
+                      ['Movements', 'Number of Paintings', {role : 'style'}],
+                      ["Impressionism",1067, 'color: #e5e4e2' ],
+                      ["Realism",636, 'color: #e5e4e2' ],
+                      ["Expressionism",498, 'color: #e5e4e2' ],
+                      ["Symbolism",388, 'color: #e5e4e2' ],
+                      ["Post-Impressionism",236, 'color: #e5e4e2' ],
+                      ["Academic Art",176,'color: #e5e4e2' ],
+                      ["Modernism",147,'color: #e5e4e2' ],
+                      ["Orientalism",93,'color: #e5e4e2' ],
+                      ["Naturalism",83,'color: #e5e4e2' ],
+                      ["Art Nouveau",70,'color: #e5e4e2' ],
+                      ["Romanticism",64,'color: #e5e4e2' ],
+                      ["Neo-Impressionism",46,'color: #e5e4e2' ],
+                      ["Arts and Crafts movement",28,'color: #e5e4e2' ],
+                      ["Ashcan School",26,'color: #e5e4e2' ],
+                      ["Cubism",16,'color: #e5e4e2' ]
                     ]);
             
                     var options = {
                       title: 'TOP 15 MOVEMENTS BY PAINTING',
                       width: 900,
+                      theme: 'material', 
                       legend: { position: 'none' },
                       is3D:true,
                       chart: { title: 'TOP 15 MOVEMENTS BY PAINTING'},
@@ -253,7 +255,8 @@
                           0: { side: 'top', label: 'Numbers of Paintings'} // Top x-axis.
                         }
                       },
-                      bar: { groupWidth: "90%" },
+                      bar: { groupWidth: "90%" 
+                            },
 		      backgroundColor: '#cbdbf4',
                     };
             
@@ -262,10 +265,12 @@
                     chart.draw(data, google.charts.Bar.convertOptions(options));
                   }
                 </script>
-                <div id="barchart_material2" style="width: 900px; height: 700px;" class="center"></div>
+                <div id="barchart_material2" style="width:auto; height:400px; display:block; margin-left: 100px; margin-right: auto;" ></div>
 
               </div>
-              <h3 class="secondary_h">Painters per movement</h3>
+              <br>
+              <br>
+              <h4 class="question">How many painters are there in each movement?</h4>
               <div class="chart" class="center">
                 <script type="text/javascript">
                   google.charts.load('current', {'packages':['bar']});
@@ -296,47 +301,13 @@
                       ['Naturalism', 2],
                       ['Dutch Golden Age painting', 2],
                       ['Düsseldorf school of painting', 2],
-                      ['Macchiaioli', 2],
-                      ['Romantic nationalism', 2],
-                      ['Surrealism', 2],
-                      ['Etaples art colony', 1],
-                      ['Flemish neo-renaissance', 1],
-                      ['Harlem Renaissance', 1],
-                      ['Hudson River school', 1],
-                      ['Jack of Diamonds', 1],
-                      ['Luminism', 1],
-                      ['Molse School', 1],
-                      ['Munich School', 1],
-                      ['Baroque painting', 1],
-                      ['Biedermeier', 1],
-                      ['Bloomsbury Group', 1],
-                      ['Brabant fauvism', 1],
-                      ['Newlyn School', 1],
-                      ['Art Deco', 1],
-                      ['Orientalist painting', 1],
-                      ['Precisionism', 1],
-                      ['Regionalism', 1],
-                      ['Rococo', 1],
-                      ['Romantic painting', 1],
-                      ['Russian avant-garde', 1],
-                      ['Scapigliatura', 1],
-                      ['Synchromism', 1],
-                      ['Vienna Secession', 1],
-                      ['Volcano School', 1],
-                      ['Aestheticism', 1],
-                      ['Genre painting', 1],
-                      ['Mannerism', 1],
-                      ['Neo-Pompeian', 1],
-                      ['Neo-romanticism', 1],
-                      ['Synthetism', 1],
-                      ['Vorticism', 1],
-                      ['École de Nancy', 1],
+                      
                     ]);
             
                     var options = {
                       chart: {
                         title: 'Number painters per movement',
-                        subtitle: 'we can see the most popular movement is Realism',
+                        //subtitle: 'we can see the most popular movement is Realism',
                       },
                       bars: 'horizontal',    
 		      backgroundColor: '#cbdbf4',
@@ -347,9 +318,11 @@
                     chart.draw(data, google.charts.Bar.convertOptions(options));
                   }
                 </script>
-                <div id="barchart_material1" style="width: 1200px; height: 1200px;"></div>
+                <div id="barchart_material1" style="width: 800px; height: 500px; display:block; margin-left: auto; margin-right: auto;"></div>
               </div>
-              <p>+ TOP 15 painters and their MOVEMENTS</p>
+              <br>
+              <br>
+              <h4 class='question'>Who are the most proficient painters? To which movement they ascribe?</h4>
               <div class="chart">
                 <script type="text/javascript">
                   google.charts.load('current', {'packages':['bar']});
@@ -398,12 +371,14 @@
                   }
                 </script>
           
-                <div id="barchart_material3" style="width: 900px; height: 700px;"></div>
+                <div id="barchart_material3" style="width:auto; height:400px; display:block; margin-left: 100px; margin-right: auto;"></div>
 
               </div>
-              <h3 id="geo" class="secondary_h">Movement per country</h3>
-              <p class="center">visualization with map</p>
-              <p>VISUALIZATION WITH N PORTRAIT PER COUNTRY WITH MAP</p>
+              <br>
+              <br>
+              <h4 id="geo" class="question">Geographical information</h4>
+              <p class="center" id="intro_p">Which movements are the most popular in each country?</p>
+              
 		  <br>
 		  <br>
               <!--Number of portraits per country-->
@@ -459,7 +434,7 @@
                     ]);
             
                     var options = {
-                        colorAxis: {colors: ['#c7dea0', '#556b2f']},
+                        colorAxis: {colors: ['#b87ade', '#4d0878']},
 			backgroundColor: '#cbdbf4'
                     };
             
@@ -468,12 +443,12 @@
                     chart.draw(data, options);
                   }
                 </script>
-                <div id="regions_div" style="width: 900px; height: 500px;"></div>
+                <div id="regions_div" style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto; "></div>
               </div>
 		<br>
 		<br>
 
-              <p>VISUALIZATION WITH N PAINTER PER COUNTRY WITH MAP</p>
+              <p id="intro_p">How many painters are represented in the dataset for each country?</p>
 		  <br>
 		  <br>
               <div class="chart">
@@ -528,7 +503,7 @@
                     ]);
             
                     var options = {
-                        colorAxis: {colors: ['#c7dea0', '#556b2f']},
+                        colorAxis: {colors: ['#7adecc', '#3960a3']},
             		backgroundColor: '#cbdbf4',
                     };
             
@@ -537,21 +512,14 @@
                     chart.draw(data, options);
                   }
                 </script>
-                <div id="regions_div1" style="width: 900px; height: 500px;"></div>
+                <div id="regions_div1" style="width: 900px; height: 500px; display:block; margin-left: auto; margin-right: auto;"></div>
               </div>
               
-	    <br>
+	    
             <br>
             <br>
             <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+            
 
               <h3 id="colour" class="secondary_h">COLOURS</h3>
               <p id="intro_p">When it comes to painting, the colours used in a work of art are just as important as the subject matter. </p> 
@@ -778,7 +746,7 @@
       <script src="assets/js/scroll-out.js"></script>
       <script type="text/javascript">
         ScrollOut({
-          targets: 'h2, p, img, svg, h3, span, div, ul, li'
+          targets: 'h2, p, img, svg, h3, h4, span, div, ul, li'
         })
       </script>
     </body>
