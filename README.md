@@ -1,7 +1,7 @@
 # Portraits en nuances 
-Check out the [Project Webpage](https://valentinacozzi.github.io/epds_project/)
+Check out the [Project Webpage](https://github.com/valentinacozzi/portraits_en_nuances)
 
-Jupyter Notebook on: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/valentinacozzi/epds_project/main) 
+Jupyter Notebook on: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/valentinacozzi/portraits_en_nuances/main) 
 
 ## Abstract
 This project is a general study of modern art portraits with a particular interest in the color aspect of the paintings. Quantitative information about the artistic movements, painters and colors have been used to answer some specific research questions. 
