@@ -1,5 +1,5 @@
 # Portraits en nuances 
-Check out the [Project Webpage](https://github.com/valentinacozzi/portraits_en_nuances)
+Check out the [Project Webpage](https://valentinacozzi/portraits_en_nuances)
 
 Jupyter Notebook on: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/valentinacozzi/portraits_en_nuances/main) 
 
